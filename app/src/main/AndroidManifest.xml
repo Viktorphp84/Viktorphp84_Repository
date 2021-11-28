@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Viktor_Ivanov_App">
         <activity
+            android:name=".ActivityInsertData"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

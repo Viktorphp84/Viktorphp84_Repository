@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Viktor_Ivanov_App</string>
+
+    <string-array name="type_of_load">
+        <item>Жилые дома с нагрузкой до 2кВт</item>
+        <item>Жилые дома с нагрузкой свыше 2кВт</item>
+        <item>Жилые дома с электроплитами</item>
+        <item>Производственные потребители</item>
+    </string-array>
+    <string name="window_input">Ввод данных</string>
 </resources>
+
