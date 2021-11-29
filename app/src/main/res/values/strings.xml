@@ -1,15 +1,18 @@
 <resources>
-    <string name="app_name">Viktor_Ivanov_App</string>
+    <string name="app_name" translatable="false">Viktor_Ivanov_App</string>
 
     <string-array name="type_of_load">
-        <item>Жилые дома с нагрузкой до 2кВт</item>
-        <item>Жилые дома с нагрузкой свыше 2кВт</item>
-        <item>Жилые дома с электроплитами</item>
-        <item>Производственные потребители</item>
+        <item>Residential houses with load up to 2kW</item>
+        <item>Residential houses with load over 2kW</item>
+        <item>Residential houses with electric stoves</item>
+        <item>Industrial customers</item>
     </string-array>
-    <string name="window_input">Ввод данных</string>
-    <string name="button_next">Далее</string>
-    <string name="number_of_consumers">Количество потребителей</string>
+    <string name="inform">Enter the number of consumers and type of load</string>
+    <string name="window_input">Data entry</string>
+    <string name="button_next">Next</string>
+    <string name="number_of_consumers">Number of consumers</string>
     <string name="input_number">0</string>
+    <string name="type_load">Load type selection</string>
+    <string name="off">Disable recalculation</string>
 </resources>
 
