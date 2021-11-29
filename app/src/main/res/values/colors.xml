@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="button_background">#03AC9C</color>
+    <color name="activity_background">#5A5A5A</color>
+    <color name="spinner_background">#AAAAAA</color>
 </resources>

@@ -8,5 +8,8 @@
         <item>Производственные потребители</item>
     </string-array>
     <string name="window_input">Ввод данных</string>
+    <string name="button_next">Далее</string>
+    <string name="number_of_consumers">Количество потребителей</string>
+    <string name="input_number">0</string>
 </resources>
 
