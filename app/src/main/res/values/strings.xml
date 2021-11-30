@@ -14,5 +14,6 @@
     <string name="input_number">0</string>
     <string name="type_load">Load type selection</string>
     <string name="off">Disable recalculation</string>
+    <string name="load">Load</string>
 </resources>
 

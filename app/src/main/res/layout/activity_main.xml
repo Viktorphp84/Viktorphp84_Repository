@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_num_consum"
         style="@style/Theme.Viktor_Ivanov_App.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.387" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/text_load_type"
         style="@style/Theme.Viktor_Ivanov_App.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,22 +29,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/text_num_consum"
         app:layout_constraintVertical_bias="0.079" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edit_num_consum"
         style="@style/Theme.Viktor_Ivanov_App.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="5"
         android:inputType="textPersonName"
         android:text="@string/input_number"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@+id/text_num_consum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.691"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/text_num_consum"
+        app:layout_constraintTop_toTopOf="@+id/text_num_consum"
         app:layout_constraintVertical_bias="0.428" />
 
     <Spinner
@@ -57,8 +57,8 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toEndOf="@+id/text_load_type"
+        app:layout_constraintTop_toBottomOf="@+id/edit_num_consum" />
 
     <Button
         android:id="@+id/button"
@@ -78,16 +78,16 @@
         android:id="@+id/group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="textView,textView2,spinner,editTextTextPersonName" />
+        app:constraint_referenced_ids="text_num_consum,text_load_type,spinner,edit_num_consum" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="textView,textView2,spinner,editTextTextPersonName" />
+        app:constraint_referenced_ids="text_num_consum,text_load_type,spinner,edit_num_consum" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/text_title"
         style="@style/Theme.Viktor_Ivanov_App.TextView"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
         app:layout_constraintVertical_bias="0.262" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/text_disable"
         style="@style/Theme.Viktor_Ivanov_App.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

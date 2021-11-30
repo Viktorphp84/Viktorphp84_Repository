@@ -7,13 +7,15 @@ import android.util.Log
 import android.view.View
 import com.example.viktor_ivanov_app.databinding.ActivityMainBinding
 
+private const val KEY = "number"
+
 class MainActivity : AppCompatActivity() {
     private lateinit var bindingClass:ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        bindingClass= ActivityMainBinding.inflate(this.layoutInflater)
+        bindingClass = ActivityMainBinding.inflate(this.layoutInflater)
         setContentView(bindingClass.root)
 
         //actionBar?.title="Ввод данных"
@@ -48,11 +50,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickTest(view: View) {
-        bindingClass= ActivityMainBinding.inflate(this.layoutInflater)
+        bindingClass = ActivityMainBinding.inflate(this.layoutInflater)
         setContentView(bindingClass.root)
-        //bindingClass.button.text = "ПРЮВЕТ!"
 
         val intent: Intent = Intent(this, ActivityInsertData::class.java)
+        val num: Int? = bindingClass.editNumConsum.toString().toInt()
+
+        intent.putExtra(KEY, num)//передача числа из строки ввода в intent
         startActivity(intent)
     }
 }
