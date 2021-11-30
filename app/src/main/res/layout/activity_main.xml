@@ -88,10 +88,12 @@
 
     <TextView
         android:id="@+id/textView4"
+        style="@style/Theme.Viktor_Ivanov_App.TextView"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="@string/inform"
-        style="@style/Theme.Viktor_Ivanov_App.TextView"
+        android:textSize="24dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
