@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(bindingClass.root)
 
         val intent: Intent = Intent(this, ActivityInsertData::class.java)
-        val num: Int? = bindingClass.editNumConsum.toString().toInt()
+        val num: Int = bindingClass.editNumConsum.text.toString().toInt()
 
         intent.putExtra(KEY, num)//передача числа из строки ввода в intent
         startActivity(intent)
