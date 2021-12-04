@@ -15,5 +15,7 @@
     <string name="type_load">Load type selection</string>
     <string name="off">Disable recalculation</string>
     <string name="load">Load</string>
+    <string name="binding_enter_load">Enter the Load</string>
+    <string name="number_load">Load №</string>
 </resources>
 
