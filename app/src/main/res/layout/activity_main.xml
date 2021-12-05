@@ -12,7 +12,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="124dp"
         android:backgroundTint="@color/button_background"
         android:text="@string/button_next"
         android:textColor="@color/white"
@@ -35,6 +35,7 @@
 
     <TextView
         android:id="@+id/text_title"
+        android:textStyle="bold"
         style="@style/Theme.Viktor_Ivanov_App.TextView"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -46,7 +47,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202" />
+        app:layout_constraintVertical_bias="0.122" />
 
     <TextView
         android:id="@+id/text_num_consum"
@@ -123,13 +124,15 @@
         android:text="@string/type_load"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintHorizontal_bias="0.004"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_num_consum"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintVertical_bias="0.057" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
+        android:padding="5dp"
+        android:background="@color/recycle_view"
         android:layout_width="409dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -141,6 +144,7 @@
     <TextView
         android:id="@+id/textView"
         style="@style/Theme.Viktor_Ivanov_App.TextView"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"

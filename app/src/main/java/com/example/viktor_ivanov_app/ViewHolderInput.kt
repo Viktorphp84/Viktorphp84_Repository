@@ -10,7 +10,7 @@ class ViewHolderInput(itemView: View): RecyclerView.ViewHolder(itemView) {
     private  val nameEditText: EditText = itemView.findViewById(R.id.editTextForInput)
 
     fun bind(data: DataInput) {
-        nameTextView.text = "Load № ${data.str}"
+        nameTextView.text = "${data.str}"
         nameEditText.setText(data.nameEdit)
     }
 }

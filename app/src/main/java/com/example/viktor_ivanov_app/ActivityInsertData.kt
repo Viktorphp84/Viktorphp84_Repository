@@ -25,18 +25,11 @@ class ActivityInsertData : AppCompatActivity() {
 
         val inputList: MutableList<DataInput> = mutableListOf()
 
-        for(i in 1..number_consum) {
-            inputList.add(DataInput(i.toString(), "Enter the Load"))
-        }
+        val str: String = resources.getString(R.string.load)
 
-        /*val inputList:List<DataInput> = listOf(
-            DataInput("1", "Enter the Load"),
-            DataInput("2", "Enter the Load"),
-            DataInput("3", "Enter the Load"),
-            DataInput("4", "Enter the Load"),
-            DataInput("5", "Enter the Load"),
-            DataInput("6", "Enter the Load")
-        )*/
+        for(i in 1..number_consum) {
+            inputList.add(DataInput("$str $i", resources.getString(R.string.binding_enter_load) ))
+        }
 
         inputRecycler = findViewById(R.id.input_recycler_view)
         inputRecycler.layoutManager =

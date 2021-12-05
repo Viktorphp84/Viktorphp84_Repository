@@ -13,8 +13,8 @@
             android:id="@+id/rec_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_logo_lan">
-
+            android:src="@drawable/ic_logo_lan"
+            >
         </ImageView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
