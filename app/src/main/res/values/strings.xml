@@ -15,8 +15,14 @@
     <string name="type_load">Load type selection</string>
     <string name="off">Disable recalculation</string>
     <string name="load">Load</string>
+    <string name="cos">Cos</string>
+    <string name="length">Length of the site</string>
     <string name="binding_enter_load">Enter the Load</string>
+    <string name="binding_enter_cos">Enter Cos</string>
+    <string name="binding_enter_length">Enter the length of the site</string>
     <string name="number_load">Load №</string>
     <string name="resources">Resources</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
 

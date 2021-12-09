@@ -4,7 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class CardsAdapter(private val cardsList: List<Cards>): RecyclerView.Adapter<CardsViewHolder>() {
+class CardsAdapter(private val cardsList: List<Cards>):
+    RecyclerView.Adapter<CardsViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardsViewHolder {
         val itemView =
             LayoutInflater.from(parent.context).inflate(R.layout.cards, parent, false)

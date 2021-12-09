@@ -1,39 +1,57 @@
 package com.example.viktor_ivanov_app
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.text.Layout
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.os.bundleOf
+import androidx.core.view.children
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.viktor_ivanov_app.databinding.ActivityMainBinding
 
 private const val KEY = "number"
 
 class ActivityInsertData : AppCompatActivity() {
 
-    lateinit var inputRecycler: RecyclerView
+    private lateinit var buttonNextFragment: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        val number_consum: Int = intent.getIntExtra(KEY, 0)//получение переданного числа
+        val number: Int = intent.getIntExtra(KEY, 0)//получение переданного числа
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_insert_data)
 
-        val inputList: MutableList<DataInput> = mutableListOf()
+        val fragmentConsum = InputFragmentConsum()
+        val fragmentCos = InputFragmentCos()
+        val fragmentLength = InputFragmentLength()
 
-        val str: String = resources.getString(R.string.load)
+        supportFragmentManager.beginTransaction().
+        replace(R.id.fragment_container_view, fragmentConsum). //addToBackStack(fragment.tag).//при нажатии кнопки домой экраны запоминаются как в стеке
+        commit()
 
-        for(i in 1..number_consum) {
-            inputList.add(DataInput("$str $i", resources.getString(R.string.binding_enter_load) ))
+        fragmentConsum.arguments = bundleOf(Pair("num", number))
+
+        buttonNextFragment = findViewById(R.id.button_next_frag)
+
+        buttonNextFragment.setOnClickListener{
+            val fragment =
+                when(supportFragmentManager.findFragmentById(R.id.fragment_container_view)) {
+                    is InputFragmentConsum -> fragmentCos
+                    is InputFragmentCos -> fragmentLength
+                    else -> fragmentConsum
+                }
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container_view, fragment).commit()
+
+            fragment.arguments = bundleOf(Pair("num", number))
         }
-
-        inputRecycler = findViewById(R.id.input_recycler_view)
-        inputRecycler.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false )
-        inputRecycler.adapter = AdapterForInput(inputList)
     }
 }
