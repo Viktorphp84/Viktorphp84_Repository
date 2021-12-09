@@ -19,10 +19,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val cardsList: List<Cards> = listOf(
-            Cards(R.drawable.ic_logo_gau),
-            Cards(R.drawable.ic_logo_iprs),
-            Cards(R.drawable.ic_logo_lan),
-            Cards(R.drawable.ic_logo_urait)
+            Cards(R.drawable.ic_logo_gau, Uri.parse("https://www.orelsau.ru/")),
+            Cards(R.drawable.ic_logo_iprs, Uri.parse("https://www.iprbookshop.ru/")),
+            Cards(R.drawable.ic_logo_lan, Uri.parse("https://e.lanbook.com/")),
+            Cards(R.drawable.ic_logo_urait, Uri.parse("https://urait.ru/"))
         )
 
         bindingClass = ActivityMainBinding.inflate(this.layoutInflater)
@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         cardsRecyclerView.adapter = CardsAdapter(cardsList)
 
         //actionBar?.title="Ввод данных"
-
         bindingClass.button.setOnClickListener{
             val num: Int = bindingClass.editNumConsum.text.toString().toInt()
             val intent: Intent = Intent(this, ActivityInsertData::class.java)

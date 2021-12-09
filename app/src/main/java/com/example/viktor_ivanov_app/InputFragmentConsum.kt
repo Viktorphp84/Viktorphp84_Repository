@@ -25,6 +25,7 @@ class InputFragmentConsum : Fragment() {
         val inputList: MutableList<DataInput> = mutableListOf()
         val str: String = resources.getString(R.string.load)
 
+
         for(i in 1..num!!) {
             inputList.add(DataInput("$str $i", resources.getString(R.string.binding_enter_load) ))
         }

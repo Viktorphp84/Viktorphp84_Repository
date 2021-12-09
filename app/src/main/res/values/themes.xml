@@ -16,6 +16,7 @@
 
     <style name="Theme.Viktor_Ivanov_App.TextView" parent="Widget.MaterialComponents.TextView">
         <item name="android:textSize">20sp</item>
+        <item name="android:textColorTertiary">@color/white</item>
     </style>
 
     <style name="NoTitle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
