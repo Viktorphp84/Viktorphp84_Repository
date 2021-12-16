@@ -10,7 +10,7 @@
     <color name="button_background">#03AC9C</color>
     <color name="activity_background">#5A5A5A</color>
     <color name="spinner_background">#AAAAAA</color>
-    <color name="recycle_view">#979797</color>
+    <color name="recycle_view">#57DA5C</color>
     <color name="text_color">#000505</color>
     <color name="background_activity">#9EFFF6</color>
 </resources>
