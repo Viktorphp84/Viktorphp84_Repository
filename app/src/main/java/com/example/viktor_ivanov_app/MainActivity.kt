@@ -1,10 +1,11 @@
 package com.example.viktor_ivanov_app
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.view.children
+import android.view.inputmethod.InputMethodManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.viktor_ivanov_app.databinding.ActivityMainBinding
@@ -41,5 +42,12 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(KEY, num)//передача числа из строки ввода в intent
             startActivity(intent)
         }
+
+        bindingClass.editNumConsum.setOnClickListener {
+            val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.hideSoftInputFromWindow(bindingClass.editNumConsum.windowToken, 0)
+        }
+
+
     }
 }
