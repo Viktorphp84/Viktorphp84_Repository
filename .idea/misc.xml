@@ -3,9 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProject/AndroidStudio/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21614583333333334" />
+        <entry key="..\:/AndroidProject/AndroidStudio/app/src/main/res/drawable/ic_logo_lan.xml" value="0.21614583333333334" />
         <entry key="..\:/AndroidProject/AndroidStudio/app/src/main/res/drawable/ic_logo_urait.xml" value="0.21614583333333334" />
+        <entry key="..\:/AndroidProject/AndroidStudio/app/src/main/res/drawable/round_style.xml" value="0.21614583333333334" />
+        <entry key="..\:/AndroidProject/AndroidStudio/app/src/main/res/font/roboto.xml" value="0.23020833333333332" />
         <entry key="..\:/AndroidProject/AndroidStudio/app/src/main/res/layout/activity_insert_data.xml" value="0.2" />
         <entry key="..\:/AndroidProject/AndroidStudio/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/AndroidProject/AndroidStudio/app/src/main/res/layout/cards.xml" value="0.2" />
+        <entry key="..\:/AndroidProject/AndroidStudio/app/src/main/res/layout/fragment_input_consum.xml" value="0.2" />
+        <entry key="..\:/AndroidProject/AndroidStudio/app/src/main/res/layout/string_activity.xml" value="0.2" />
         <entry key="..\:/AndroidStudio/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.10989583333333333" />
         <entry key="..\:/AndroidStudio/app/src/main/res/layout/activity_insert_data.xml" value="0.25" />
         <entry key="..\:/AndroidStudio/app/src/main/res/layout/activity_main.xml" value="0.33" />

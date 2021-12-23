@@ -2,10 +2,13 @@ package com.example.viktor_ivanov_app
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.*
+import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.viktor_ivanov_app.databinding.ActivityMainBinding
@@ -48,6 +51,14 @@ class MainActivity : AppCompatActivity() {
             inputMethodManager.hideSoftInputFromWindow(bindingClass.editNumConsum.windowToken, 0)
         }
 
-
+        val imageViewOGAU: ImageView= findViewById(R.id.imageView)
+        val bitmap = (resources.getDrawable(R.drawable.ic_logo_gau) as BitmapDrawable).bitmap
+        val imageRounded = Bitmap.createBitmap(bitmap.width, bitmap.height, bitmap.config)
+        val canvas = Canvas(imageRounded)
+        val paint = Paint()
+        paint.isAntiAlias = true
+        paint.shader = BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP)
+        canvas.drawRoundRect(RectF(10F, 10F, bitmap.width.toFloat(), bitmap.height.toFloat()),100F, 100F, paint)
+        imageViewOGAU.setImageBitmap(imageRounded)
     }
 }
